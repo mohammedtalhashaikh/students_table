@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Student portal</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <h1>Student portal</h1>
+            </div>
+        </header>
+        <main id="main">
+            <div class="search">
+                <input id="input" type="text" placeholder="Search" />
+                <button type="button" id="searchBtn">Search</button>
+            </div>
+            <div class="buttons">
+                <button type="button" id="ascendingSort">Sort A &rarr; Z</button>
+                <button type="button" id="descendingSort">Sort Z &rarr; A</button>
+                <button type="button" id="marksSort">Sort By Marks</button>
+                <button type="button" id="passingSort">Sort By Passing</button>
+                <button type="button" id="classSort">Sort By Class</button>
+                <button type="button" id="genderSort">Sort By Gender</button>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Class</th>
+                            <th>Marks</th>
+                            <th>Passing</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+            <div id="secondTable" class="table" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Class</th>
+                            <th>Marks</th>
+                            <th>Passing</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="secondTbody">
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <script type="text/javascript" src="./index.js" />
+    </body>
+
+</html>
