@@ -10,7 +10,7 @@ const genderSort = document.getElementById("genderSort");
 const inputFilter = document.getElementById("input");
 const searchBtn = document.getElementById("searchBtn");
 
-window.onload = fetchData();
+// window.onload = fetchData();
 
 searchBtn.addEventListener("click", () => {
   searchFilter(inputFilter.value);
@@ -98,7 +98,7 @@ genderSort.addEventListener("click", () => {
 const studentsArray = [];
 
 const fetchData = async () => {
-  const response = await fetch("./MOCK_DATA.json");
+  const response = await fetch("MOCK_DATA.json");
   const students = await response.json();
 
   for (const student in students) {
