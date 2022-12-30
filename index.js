@@ -10,6 +10,8 @@ const genderSort = document.getElementById("genderSort");
 const inputFilter = document.getElementById("input");
 const searchBtn = document.getElementById("searchBtn");
 
+window.onload = fetchData();
+
 searchBtn.addEventListener("click", () => {
   searchFilter(inputFilter.value);
 });
